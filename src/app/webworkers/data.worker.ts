@@ -1,7 +1,6 @@
 /// <reference lib="webworker" />
 
 addEventListener('message', ({ data }) => {
-  console.log("Data: ", data);
   let cities = data.cities;
   const [adminOne, adminTwo] = [data.adminOne, data.adminTwo]
   

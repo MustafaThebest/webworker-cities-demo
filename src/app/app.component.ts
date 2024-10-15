@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   }
 
   async ngOnInit(): Promise<void> {
-    let data = await this.dataService.getCitiesWithAdminOne(true, false);
-    console.log("Data: ", data);
+    let data = await this.dataService.getCitiesWithAdminOne(true, false, 4);
+    console.log("Result: ", data);
   }
 }
